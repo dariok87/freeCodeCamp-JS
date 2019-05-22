@@ -29,13 +29,12 @@ An h1, a p, and an unordered list that contains three li items. You can include 
 Note: When rendering multiple elements like this, you can wrap them all in parentheses, but it's not strictly required. Also notice this challenge uses a div tag to wrap all the child elements within a single parent element. If you remove the div, the JSX will no longer transpile. Keep this in mind, since it will also apply when you return JSX elements in React components.
 */
 
-const JSX = 
-<div>
-    <h1></h1>
-    <p></p>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-</div>
+const JSX = <div>
+	<h1>Heading.</h1>
+	<p>Paragraph</p>
+	<ul>
+		<li>Computer</li>
+		<li>Kindle</li>
+		<li>Book</li>
+	</ul>
+</div>;
