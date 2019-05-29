@@ -19,10 +19,8 @@ There are List and ToDo components in the code editor. When rendering each List 
 */
 
 const List= (props) => {
-    { /* change code below this line */ }
-    return <p>{props.tasks.join(', ')}</p>
-    { /* change code above this line */ }
-  };
+  return <p>{props.tasks.join(', ')}</p>
+};
   
   class ToDo extends React.Component {
     constructor(props) {
