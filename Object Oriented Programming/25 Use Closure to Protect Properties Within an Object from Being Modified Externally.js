@@ -21,3 +21,10 @@ Here getHachedEggCount is a privileged method, because it has access to the priv
 Change how weight is declared in the Bird function so it is a private variable. Then, create a method getWeight that returns the value of weight.
 */
 
+function Bird() {
+  let weight = 15;
+  
+  this.getWeight = function() {
+    return weight;
+  };
+}
