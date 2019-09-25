@@ -8,7 +8,7 @@ So far, we have seen two distinct principles for functional programming:
 Adding one to a number is not very exciting, but we can apply these principles when working with arrays or more complex objects.
 
 
-Refactor (rewrite) the code so the global array bookList is not changed inside either function. The add function should add the given bookNameto the end of an array. The removefunction should remove the given bookNamefrom an array. Both functions should return an array, and any new parameters should be added before the bookNameone.
+Refactor (rewrite) the code so the global array bookList is not changed inside either function. The add function should add the given bookNameto the end of an array. The remove function should remove the given bookName from an array. Both functions should return an array, and any new parameters should be added before the bookName one.
 */
 
 function add (arr, bookName) {
