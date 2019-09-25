@@ -20,7 +20,7 @@ function add (arr, bookName) {
   function remove (arr, bookName) {
     let newArr = [...arr];  // Copy the bookList array to a new array.
     if (newArr.indexOf(bookName) >= 0) {   // Check whether the bookName parameter is in new array.
-      newArr.splice(newArr.indexOf(bookName), 1); // Remove the given paramater from the new array.
+      newArr.splice(newArr.indexOf(bookName), 1); // Remove the given parameter from the new array.
       return newArr; // Return the new array.
       }
   }
