@@ -126,7 +126,6 @@ var watchList = [
 var filteredList = watchList.map(function(e) {
 	return {title: e["Title"], rating: e["imdbRating"]}
 }).filter((e) => e.rating >= 8);
-
 // Add your code above this line
 
 console.log(filteredList); 
