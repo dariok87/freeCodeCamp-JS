@@ -11,10 +11,7 @@ Use the slice method in the sliceArray function to return part of the anim array
 */
 
 function sliceArray(anim, beginSlice, endSlice) {
-    // Add your code below this line
-    
-    
-    // Add your code above this line
-  }
+	return anim.slice(beginSlice, endSlice);
+}
   var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
   sliceArray(inputAnim, 1, 3);
