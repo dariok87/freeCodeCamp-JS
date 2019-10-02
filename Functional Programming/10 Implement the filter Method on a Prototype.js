@@ -12,9 +12,11 @@ var s = [23, 65, 98, 5];
 
 Array.prototype.myFilter = function(callback){
   var newArray = [];
-  // Add your code below this line
-  
-  // Add your code above this line
+  this.forEach(function(x) {
+    if (callback(x) == true) {
+      newArray.push(x);
+    }
+  })  
   return newArray;
 
 };
