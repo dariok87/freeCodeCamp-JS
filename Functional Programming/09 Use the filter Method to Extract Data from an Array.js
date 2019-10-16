@@ -123,9 +123,27 @@ var watchList = [
 
 // Add your code below this line
 
+// #1 Solution
+
 var filteredList = watchList.map(function(e) {
 	return {title: e["Title"], rating: e["imdbRating"]}
 }).filter((e) => e.rating >= 8);
 // Add your code above this line
 
 console.log(filteredList); 
+
+
+// #2 Solution
+
+var filteredList = watchList
+  .map(movie => {
+    return {
+      title: movie.Title,
+      rating: movie.imdbRating
+    };
+  })
+  .filter(movie => {
+    // return true it will keep the item
+    // return false it will reject the item
+    return parseFloat(movie.rating) >= 8.0;
+  });
