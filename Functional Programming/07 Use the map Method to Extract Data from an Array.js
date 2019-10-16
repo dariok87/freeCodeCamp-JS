@@ -131,7 +131,10 @@ var watchList = [
 
 var rating = [];
 
-rating = watchList.map( (item) => ({"title":item["Title"], "rating":item["imdbRating"]}));
+rating = watchList.map( (item) => ({
+   "title":item["Title"], 
+   "rating":item["imdbRating"]
+}));
 // Add your code above this line
 
 console.log(rating); 
