@@ -8,19 +8,38 @@ Write your own Array.prototype.myFilter(), which should behave exactly like Arra
 */
 
 // the global Array
+
+// #1 Solution
+
 var s = [23, 65, 98, 5];
 
-Array.prototype.myFilter = function(callback){
+Array.prototype.myFilter = function(callback) {
   var newArray = [];
   this.forEach(function(x) {
     if (callback(x) == true) {
       newArray.push(x);
     }
-  })  
+  });
   return newArray;
-
 };
 
-var new_s = s.myFilter(function(item){
+var new_s = s.myFilter(function(item) {
+  return item % 2 === 1;
+});
+
+// #2 Solution
+
+Array.prototype.myFilter = function(callback) {
+  var newArray = [];
+
+  for (let i = 0; i < this.length; i++) {
+    if (callback(this[i]) === true) {
+      newArray.push(this[i]);
+    }
+  }
+  return newArray;
+};
+
+var new_s = s.myFilter(function(item) {
   return item % 2 === 1;
 });
