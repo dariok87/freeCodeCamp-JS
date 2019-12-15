@@ -11,9 +11,19 @@ numbers.every(function(currentValue) {
 Use the every method inside the checkPositive function to check if every element in arr is positive. The function should return a Boolean value.
 */
 
+#1 Solution
+
 function checkPositive(arr) {
   return arr.every(function(currentValue) {
     return currentValue > 0;
   });
+}
+checkPositive([1, 2, 3, -4, 5]);
+
+
+#2 Solution
+
+function checkPositive(arr) {
+  return arr.every(val => val > 0);
 }
 checkPositive([1, 2, 3, -4, 5]);
