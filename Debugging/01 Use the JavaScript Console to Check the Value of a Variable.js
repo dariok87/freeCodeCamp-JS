@@ -18,4 +18,4 @@ a++;
 // Add your code below this line
 
 let sumAB = a + b;
-console.log(sumAB);
+console.log(a);
