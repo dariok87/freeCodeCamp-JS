@@ -9,8 +9,8 @@ The following function is supposed to create a two-dimensional array with m rows
 function zeroArray(m, n) {
   // Creates a 2-D array with m rows and n columns of zeroes
   let newArray = [];
-  let row = [];
   for (let i = 0; i < m; i++) {
+    let row = [];
     // Adds the m-th row into newArray
 
     for (let j = 0; j < n; j++) {
