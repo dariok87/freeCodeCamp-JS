@@ -12,9 +12,9 @@ class OnlyEvens extends React.Component {
   }
   shouldComponentUpdate(nextProps, nextState) {
     console.log("Should I update?");
-    // change code below this line
-    return true;
-    // change code above this line
+    if (nextProps.value % 2 == 0) {
+      return true;
+    }
   }
   componentDidUpdate() {
     console.log("Component re-rendered.");
