@@ -20,11 +20,19 @@ class MyComponent extends React.Component {
     });
   }
   render() {
-    return (
-      <div>
-        <button onClick={this.toggleDisplay}>Toggle Display</button>
-        <h1>Displayed!</h1>
-      </div>
-    );
+    if (this.state.display === true) {
+      return (
+        <div>
+          <button onClick={this.toggleDisplay}>Toggle Display</button>
+          <h1>Displayed!</h1>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <button onClick={this.toggleDisplay}>Toggle Display</button>
+        </div>
+      );
+    }
   }
 }
