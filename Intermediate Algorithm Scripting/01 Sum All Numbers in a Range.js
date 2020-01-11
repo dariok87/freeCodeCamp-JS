@@ -7,7 +7,9 @@ Remember to use Read-Search-Ask if you get stuck. Try to pair program. Write you
 */
 
 function sumAll(arr) {
-  return 1;
+  return arr
+    .sort((a, b) => a - b)
+    .reduce((a, b) => ((a + b) * (b - a + 1)) / 2);
 }
 
 sumAll([1, 4]);
