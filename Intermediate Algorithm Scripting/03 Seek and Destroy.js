@@ -7,9 +7,5 @@ You have to use the arguments object.
 Remember to use Read-Search-Ask if you get stuck. Write your own code.
 */
 
-function destroyer(arr) {
-  // Remove all the values
-  return arr;
-}
-
-destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+const destroyer = (arr, ...valuesToRemove) =>
+  arr.filter(elem => !valuesToRemove.includes(elem));
